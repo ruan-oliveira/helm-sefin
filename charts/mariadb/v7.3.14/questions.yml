@@ -19,7 +19,7 @@ questions:
     type: string
     label: Global Docker Image Registry
   - variable: image.repository
-    default: "ranchercharts/bitnami-mariadb"
+    default: "bitnami/mariadb"
     description: "Docker image name"
     type: string
     label: MariaDB Image Name
@@ -29,7 +29,7 @@ questions:
     type: string
     label: MariaDB Image Tag
   - variable: metrics.image.repository
-    default: "ranchercharts/bitnami-mysqld-exporter"
+    default: "bitnami/mysqld-exporter"
     description: "image name for metrics exporter"
     type: string
     label: Metrics Image Name

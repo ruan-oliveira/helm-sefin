@@ -17,5 +17,3 @@ maintainers:
     email: kiran.mova@openebs.io
   - name: prateekpandey14
     email: prateek.pandey@openebs.io
-annotations:
-  catalog.cattle.io/rancher-version: "< 2.6.3"

@@ -31,15 +31,20 @@ helm repo add openebs https://openebs.github.io/charts
 ## Installing OpenEBS
 
 ```bash
-helm install openebs --namespace openebs openebs/openebs --create-namespace
+helm install --namespace openebs openebs/openebs
 ```
 
+## Installing OpenEBS with the release name
+
+```bash
+helm install --name `my-release` --namespace openebs openebs/openebs
+```
 
 ## To uninstall/delete instance with release name
 
 ```bash
-helm ls --all --all-namespaces
-helm delete openebs  --namespace openebs
+helm ls --all
+helm delete `my-release`
 ```
 
 ## Configuration
@@ -135,7 +140,7 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
 
 ```bash
-helm install  openebs -f values.yaml openebs/openebs
+helm install --name openebs -f values.yaml openebs/openebs
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)

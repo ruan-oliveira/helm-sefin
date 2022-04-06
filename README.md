@@ -1,14 +1,12 @@
 # Rancher Catalog
 
-A curated collection of Rancher 2.0 enhanced Helm 3 charts. To see how catalogs are added and used in Rancher 2.0 take a look at the [docs page](https://rancher.com/docs/rancher/v2.x/en/concepts/catalogs/).
-
->**Note:** This is specific to Helm 3 charts and is added into Rancher to be deployed using Helm3.
+A curated collection of Rancher 2.0 enhanced Helm charts. To see how catalogs are added and used in Rancher 2.0 take a look at the [docs page](https://rancher.com/docs/rancher/v2.x/en/concepts/catalogs/).
 
 ## Rancher Chart Structure
 
 A Rancher chart repository differs slightly in directory structure from upstream repos in that it includes an `app version` directory. Though Rancher can use native Helm repositories as well.
 
-A Rancher chart also has two additional files an `app-readme.md` file that provides a high level overview display in the Rancher 2.0 UI and a `questions.yml` file defining questions to prompt the user with.
+A Rancher chart also has two additional files an `app-readme.md` file that provides a high level overview display in the Rancher 2.0 UI and a `questions.yml` file defining questions to prompt the user with. 
 
 ```
 charts/wordpress/<app version>/
@@ -85,7 +83,7 @@ The above file also provides a list of categories that this chart fits into. Thi
 | 	show_if           | string      | false  | show current variable if conditional variable is true, for example `show_if: "serviceType=Nodeport"` |
 | 	show\_subquestion_if |  string  | false     | show subquestions if is true or equal to one of the options. for example `show_subquestion_if: "true"`|
 
-**subquestions**: `subquestions[]` cannot contain `subquestions` or `show_subquestions_if` keys, but all other keys in the above table are supported.
+**subquestions**: `subquestions[]` cannot contain `subquestions` or `show_subquestions_if` keys, but all other keys in the above table are supported. 
 
 ## License
 Copyright (c) 2018 [Rancher Labs, Inc.](http://rancher.com)
@@ -101,3 +99,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+    

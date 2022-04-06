@@ -1,8 +1,0 @@
-rancher_max_version: 2.6.2
-questions: 
-# allowedExternalIPCidrs
-- variable: allowedExternalIPCidrs
-  label: Allowed external IP cidrs
-  description: Set allowed external IP CIDRs separated by a comma
-  type: string
-  group: Configuration
